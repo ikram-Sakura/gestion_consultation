@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:decorate="~{layout}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+</head>
+<body>
+<section layout:fragment="content">
+  <div class="container text-center mt-5">
+    <h1>Bienvenue sur notre plateforme de gestion des consultations</h1>
+    <p class="lead">Gérez facilement les patients et leurs consultations.</p>
+    <a th:href="@{/patients}" class="btn btn-primary">Gérer les Patients</a>
+    <a th:href="@{/consultations}" class="btn btn-success">Voir les Consultations</a>
+    <a th:href="@{/contact}" class="btn btn-info">Contactez-nous</a>
+  </div>
+</section>
+</body>
+</html>
