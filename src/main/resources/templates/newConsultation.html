@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:decorate="~{layout}"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layout.html}">
+      layout:decorate="~{layout.html}"
+>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nouvelle Consultation - MediCare 3D</title>
+    <style>
+        .consultation-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <section layout:fragment="content">
-        <form th:object="${consultation}" action="/consultations" method="post">
-            <label class="form-label" for="date">Date :</label>
-            <input class="form-control" type="date" id="date" th:field="*{dateConsultation}">
-            <label class="form-label" for="date">Patient :</label>
-            <select class="form-select" name="idPatient" id="patient">
-                <option th:each="patient:${patients}" th:value="${patient.idPatient}" th:text="${patient.nom}">
+<section layout:fragment="content">
+    <div class="card-3d consultation-form">
+        <div class="card-body p-4">
+            <h2 class="mb-4"><i class="bi bi-calendar2-plus me-2"></i>Nouvelle Consultation</h2>
 
-                </option>
-            </select>
+            <form th:object="${consultation}" action="/consultations" method="post">
+                <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" id="date" th:field="*{dateConsultation}" class="form-control" required>
+                </div>
 
-            <label class="form-label" for="description">Description :</label>
-            <textarea class="form-control" id="description" th:field="*{description}" cols="30" rows="10"></textarea>
+                <div class="mb-3">
+                    <label for="patient" class="form-label">Patient</label>
+                    <select id="patient" name="idPatient" class="form-select" required>
+                        <option value="" disabled selected>Sélectionnez un patient</option>
+                        <option th:each="patient : ${patients}"
+                                th:value="${patient.idPatient}"
+                                th:text="${patient.nom + ' ' + patient.prenom}">
+                        </option>
+                    </select>
+                </div>
 
-            <input class="btn btn-primary" type="submit" value="Enregistrer">
-            <input class="btn btn-danger" type="reset" value="Annuler">
-        </form>
-    </section>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea id="description" th:field="*{description}" class="form-control" rows="5" required></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary btn-3d px-4">
+                        <i class="bi bi-check-circle me-1"></i> Enregistrer
+                    </button>
+                    <button type="reset" class="btn btn-danger btn-3d px-4">
+                        <i class="bi bi-x-circle me-1"></i> Annuler
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 </body>
 </html>
