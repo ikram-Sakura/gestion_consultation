@@ -45,7 +45,8 @@ Les informations essentielles comprennent le nom, le prénom, l'email et le num�
 
 La gestion des consultations permet de suivre les rendez-vous des patients. Chaque consultation est liée à un patient spécifique. L'utilisateur peut ajouter de nouvelles consultations, modifier ou supprimer celles existantes.
 ![image](https://github.com/user-attachments/assets/b5e00f1c-5112-49f5-8cf1-15ba658c342c)
-![image](https://github.com/user-attachments/assets/637fc9a2-a0a4-410d-8787-dc54ac3d73a0)
+![image](https://github.com/user-attachments/assets/32cfe4f5-8dd7-4a5a-8eb8-026adab576f5)
+
 
 ### 4. **Formulaire de Contact**
 
