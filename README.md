@@ -27,7 +27,7 @@ La page d'accueil affiche un aperçu général de l'application avec les liens v
 - **Voir les Consultations** : Permet à l'utilisateur de consulter la liste des consultations associées aux patients.
 - **Contactez-nous** : Un lien pour accéder à la page de contact et envoyer des messages à l'équipe.
   ![image](https://github.com/user-attachments/assets/366339fa-9e88-4357-a52f-7913439cd95f)
-
+  ![image](https://github.com/user-attachments/assets/8af951bc-8521-4fa3-803b-4dcac4ca2ba1)
 
 ### 2. **Gestion des Patients**
 
@@ -37,14 +37,20 @@ Cette fonctionnalité permet aux utilisateurs de :
 - Supprimer des patients.
 
 Les informations essentielles comprennent le nom, le prénom, l'email et le numéro de téléphone.
+![image](https://github.com/user-attachments/assets/963b6971-609a-47a5-aded-173bac1cba3f)
+![image](https://github.com/user-attachments/assets/b39f0d7f-ce48-4b8f-96f0-5738a17f1f33)
+![image](https://github.com/user-attachments/assets/8f84e7e5-b895-4324-8bf3-2b3844b2558b)
 
 ### 3. **Gestion des Consultations**
 
 La gestion des consultations permet de suivre les rendez-vous des patients. Chaque consultation est liée à un patient spécifique. L'utilisateur peut ajouter de nouvelles consultations, modifier ou supprimer celles existantes.
+![image](https://github.com/user-attachments/assets/b5e00f1c-5112-49f5-8cf1-15ba658c342c)
+![image](https://github.com/user-attachments/assets/637fc9a2-a0a4-410d-8787-dc54ac3d73a0)
 
 ### 4. **Formulaire de Contact**
 
 Un formulaire de contact est disponible sur la page dédiée pour permettre aux utilisateurs d'envoyer des messages à l'équipe de gestion de l'application. Ce formulaire recueille le nom, l'email et le message de l'utilisateur.
+![image](https://github.com/user-attachments/assets/a3b33df8-e25c-45f7-b906-016031374fd2)
 
 ### 5. **Prérequis
 
