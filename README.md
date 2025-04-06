@@ -26,6 +26,8 @@ La page d'accueil affiche un aperçu général de l'application avec les liens v
 - **Gérer les Patients** : Cette section permet à l'utilisateur de gérer les informations des patients (ajout, modification, suppression).
 - **Voir les Consultations** : Permet à l'utilisateur de consulter la liste des consultations associées aux patients.
 - **Contactez-nous** : Un lien pour accéder à la page de contact et envoyer des messages à l'équipe.
+  ![image](https://github.com/user-attachments/assets/366339fa-9e88-4357-a52f-7913439cd95f)
+
 
 ### 2. **Gestion des Patients**
 
